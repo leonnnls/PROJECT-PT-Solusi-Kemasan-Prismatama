@@ -110,12 +110,12 @@ export default function App() {
           {/* Background Image */}
           <div className="absolute inset-0 -z-20">
             <img 
-              src="/Images/DSC03881.png" 
+              src="/Images/Hero/feed-pabrik-botol.jpg" 
               alt="Industrial Background" 
-              className="w-full h-full object-cover grayscale-[20%]"
+              className="w-full h-full object-cover"
             />
             {/* Overlay to ensure text readability */}
-            <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px]"></div>
+            <div className="absolute inset-0 bg-black/50 backdrop-blur-[1px]"></div>
           </div>
 
           <motion.div 
