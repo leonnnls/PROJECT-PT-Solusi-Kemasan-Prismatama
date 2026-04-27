@@ -388,7 +388,7 @@ export default function App() {
         <img 
           src="/images/Icon/logo-prismatama.png" 
           alt="Prismatama Logo" 
-          className="h-8 w-auto grayscale opacity-80"
+          className="h-16 w-auto grayscale opacity-80"
         />
         <div className="text-[10px] uppercase tracking-[0.4em] font-bold text-text-tertiary text-center max-w-sm leading-relaxed">
           © 2024 SOLUSI KEMASAN PRISMATAMA CORP. <br/>ENGINEERING THE FUTURE OF LOGISTICS.
