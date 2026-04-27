@@ -106,29 +106,41 @@ export default function App() {
 
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="min-h-[85vh] flex flex-col justify-center px-6 md:px-10 py-24 relative overflow-hidden">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] opacity-50 pointer-events-none -z-10">
-            <div className="w-full h-full bg-[radial-gradient(circle_at_center,var(--color-accent)_0%,transparent_70%)] opacity-[0.03]"></div>
+        <section className="min-h-[90vh] flex flex-col justify-center px-6 md:px-10 py-24 relative overflow-hidden text-white">
+          {/* Video Background */}
+          <div className="absolute inset-0 -z-20">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            >
+              <source src="/Images/SOLUSI KEMASAN PRISMATAMA - Compressed.mp4" type="video/mp4" />
+            </video>
+            {/* Overlay to ensure text readability */}
+            <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]"></div>
           </div>
 
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            className="relative z-10"
           >
-            <span className="section-label">Industrial Grade Packaging</span>
-            <h1 className="hero-text mb-12 text-text-primary">
+            <span className="section-label !text-accent">PT Solusi Kemasan Prismatama</span>
+            <h1 className="hero-text mb-12 text-white">
               PACKAGING<br/>
-              <span className="hollow-text">SYSTEMS</span><br/>
+              <span className="hollow-text !text-white opacity-80">SYSTEMS</span><br/>
               EVOLVED
             </h1>
             
             <div className="flex flex-col md:flex-row gap-12 items-start md:items-end justify-between">
-              <p className="max-w-md text-text-secondary text-base leading-relaxed uppercase tracking-wider font-medium">
+              <p className="max-w-md text-white/80 text-base leading-relaxed uppercase tracking-wider font-medium">
                 Solusi Kemasan Prismatama provides high-durability protection for global logistics. 
                 Engineered for resilience, designed for precision.
               </p>
-              <a href="#collection" className="bg-text-primary text-white px-10 py-6 font-black text-[10px] uppercase tracking-[0.2em] hover:bg-accent transition-all duration-500 flex items-center gap-4 group shadow-xl">
+              <a href="#collection" className="bg-white text-text-primary px-10 py-6 font-black text-[10px] uppercase tracking-[0.2em] hover:bg-accent hover:text-white transition-all duration-500 flex items-center gap-4 group shadow-xl">
                 Explore The Catalog
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform" />
               </a>
