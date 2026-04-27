@@ -104,25 +104,26 @@ export default function App() {
         </div>
       </header>
 
-      <main className="pt-20">
+      <main className="relative">
         {/* Hero Section */}
-        <section className="min-h-[90vh] flex flex-col justify-center px-6 md:px-10 py-24 relative overflow-hidden text-white bg-black">
-          {/* Background Image */}
-          <div className="absolute inset-0 -z-20">
+        <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-10 py-24 overflow-hidden bg-neutral-900">
+          {/* Background Layer - Forced Bottom */}
+          <div className="absolute inset-0 z-0 pointer-events-none">
             <img 
-              src="/Images/Hero/feed-pabrik-botol.jpg" 
-              alt="Industrial Background" 
+              src="/images/Hero/feed-pabrik-botol.jpg" 
+              alt="" 
               className="w-full h-full object-cover"
+              style={{ display: 'block' }}
             />
-            {/* Overlay to ensure text readability */}
-            <div className="absolute inset-0 bg-black/50 backdrop-blur-[1px]"></div>
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/50"></div>
           </div>
 
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            className="relative z-10"
+            className="relative z-10 text-white"
           >
             <span className="section-label !text-accent">PT Solusi Kemasan Prismatama</span>
             <h1 className="hero-text mb-12 text-white">
