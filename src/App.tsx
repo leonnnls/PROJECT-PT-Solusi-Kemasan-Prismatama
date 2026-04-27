@@ -165,7 +165,7 @@ export default function App() {
               
               <div className="space-y-10 max-w-2xl mx-auto">
                 <p className="text-text-secondary text-lg md:text-xl leading-relaxed font-medium uppercase tracking-wider">
-                  Solusi Kemasan Prismatama berdiri sebagai pemimpin dalam inovasi pengemasan industri sejak 1994. Kami adalah mitra strategis dalam rantai pasokan global Anda.
+                  Solusi Kemasan Prismatama berdiri sebagai pemimpin dalam inovasi pengemasan industri sejak 1966. Kami adalah mitra strategis dalam rantai pasokan global Anda.
                 </p>
                 
                 <p className="text-text-tertiary text-sm leading-relaxed uppercase tracking-[0.1em] font-medium opacity-80">
@@ -570,6 +570,10 @@ export default function App() {
           </div>
         )}
       </AnimatePresence>
+    </div>
+  );
+}
+tePresence>
     </div>
   );
 }
