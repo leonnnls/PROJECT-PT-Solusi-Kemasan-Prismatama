@@ -31,7 +31,7 @@ export default function App() {
   const [checkoutStep, setCheckoutStep] = useState<'info' | 'success'>('info');
   const [activeCategory, setActiveCategory] = useState('All');
 
-  const categories = ['All', 'Boxes', 'Film', 'Tape', 'Protection'];
+  const categories = ['All', 'Bottle1', 'Bottle2', 'Bottle3', 'Bottle4'];
 
   const filteredProducts = activeCategory === 'All' 
     ? PRODUCTS 
