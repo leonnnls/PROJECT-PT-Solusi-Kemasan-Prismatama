@@ -79,9 +79,9 @@ export default function App() {
       <header className="fixed top-0 w-full h-20 px-6 md:px-10 flex items-center justify-between border-b border-border bg-white/80 backdrop-blur-xl z-50">
         <div className="flex items-center gap-2">
           <img 
-            src="/images/Icon/logo-prismatama.png" 
+            src="/images/Icon/Logo.png" 
             alt="Prismatama Logo" 
-            className="h-10 w-auto object-contain"
+            className="h-20 w-auto object-contain"
           />
         </div>
         
@@ -386,7 +386,7 @@ export default function App() {
       {/* Footer */}
       <footer className="px-6 md:px-10 py-20 border-t border-border flex flex-col md:flex-row justify-between items-center gap-16 bg-white">
         <img 
-          src="/images/Icon/logo-prismatama.png" 
+          src="/images/Icon/Logo.png" 
           alt="Prismatama Logo" 
           className="h-16 w-auto grayscale opacity-80"
         />
