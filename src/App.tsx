@@ -76,12 +76,12 @@ export default function App() {
   return (
     <div className="min-h-screen bg-neutral-background text-text-primary selection:bg-accent selection:text-white overflow-x-hidden">
       {/* Navigation */}
-      <header className="fixed top-0 w-full h-20 px-6 md:px-10 flex items-center justify-between border-b border-border bg-white/80 backdrop-blur-xl z-50">
+      <header className="fixed top-0 w-full h-16 md:h-24 px-6 md:px-10 flex items-center justify-between border-b border-border bg-white/80 backdrop-blur-xl z-50">
         <div className="flex items-center gap-2">
           <img 
             src="/images/Icon/logo.png" 
             alt="Prismatama Logo" 
-            className="h-20 w-auto object-contain"
+            className="h-10 md:h-20 w-auto object-contain"
           />
         </div>
         
@@ -96,9 +96,9 @@ export default function App() {
           <button 
             id="cart-trigger"
             onClick={() => setIsCartOpen(true)}
-            className="w-12 h-12 rounded-full border border-border flex items-center justify-center relative hover:border-accent transition-colors group"
+            className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-border flex items-center justify-center relative hover:border-accent transition-colors group"
           >
-            <ShoppingBag className="w-5 h-5 text-text-primary group-hover:scale-110 transition-transform" />
+            <ShoppingBag className="w-4 h-4 md:w-5 md:h-5 text-text-primary group-hover:scale-110 transition-transform" />
             {cartCount > 0 && (
               <span className="absolute -top-1 -right-1 bg-accent text-[10px] w-5 h-5 rounded-full flex items-center justify-center text-white font-black animate-in zoom-in duration-300 shadow-sm">
                 {cartCount}
@@ -108,7 +108,7 @@ export default function App() {
         </div>
       </header>
 
-      <main className="relative">
+      <main className="relative pt-16 md:pt-24">
         {/* Hero Section */}
         <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-10 py-24 overflow-hidden bg-black text-white">
           {/* Background Layer */}
