@@ -74,7 +74,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-neutral-background text-text-primary selection:bg-accent selection:text-white">
+    <div className="min-h-screen bg-neutral-background text-text-primary selection:bg-accent selection:text-white overflow-x-hidden">
       {/* Navigation */}
       <header className="fixed top-0 w-full h-20 px-6 md:px-10 flex items-center justify-between border-b border-border bg-white/80 backdrop-blur-xl z-50">
         <div className="flex items-center gap-2">
