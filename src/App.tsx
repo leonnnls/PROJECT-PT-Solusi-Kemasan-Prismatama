@@ -77,8 +77,12 @@ export default function App() {
     <div className="min-h-screen bg-neutral-background text-text-primary selection:bg-accent selection:text-white">
       {/* Navigation */}
       <header className="fixed top-0 w-full h-20 px-6 md:px-10 flex items-center justify-between border-b border-border bg-white/80 backdrop-blur-xl z-50">
-        <div className="text-2xl font-black tracking-tighter flex items-center gap-1">
-          PRISMA<span className="text-accent">.</span>
+        <div className="flex items-center gap-2">
+          <img 
+            src="/images/Icon/logo-prismatama.png" 
+            alt="Prismatama Logo" 
+            className="h-10 w-auto object-contain"
+          />
         </div>
         
         <nav className="hidden md:flex gap-10 text-[11px] uppercase tracking-[0.2em] font-bold text-text-secondary">
@@ -128,7 +132,7 @@ export default function App() {
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             className="relative z-20"
           >
-            <span className="section-label !text-accent">PT Solusi Kemasan Prismatama</span>
+            <span className="section-label !text-accent !text-sm !mb-8">PT Solusi Kemasan Prismatama</span>
             <h1 className="hero-text mb-12 text-white">
               PACKAGING<br/>
               <span className="hollow-text !text-white opacity-80">SYSTEMS</span><br/>
@@ -381,9 +385,11 @@ export default function App() {
 
       {/* Footer */}
       <footer className="px-6 md:px-10 py-20 border-t border-border flex flex-col md:flex-row justify-between items-center gap-16 bg-white">
-        <div className="text-2xl font-black tracking-tighter text-text-primary">
-          PRISMA<span className="text-accent">.</span>
-        </div>
+        <img 
+          src="/images/Icon/logo-prismatama.png" 
+          alt="Prismatama Logo" 
+          className="h-8 w-auto grayscale opacity-80"
+        />
         <div className="text-[10px] uppercase tracking-[0.4em] font-bold text-text-tertiary text-center max-w-sm leading-relaxed">
           © 2024 SOLUSI KEMASAN PRISMATAMA CORP. <br/>ENGINEERING THE FUTURE OF LOGISTICS.
         </div>
