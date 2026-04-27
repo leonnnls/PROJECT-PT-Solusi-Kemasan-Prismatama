@@ -2,40 +2,46 @@
 
 **Project Name:** PRISMA. (Solusi Kemasan Prismatama Web)  
 **Status:** Prototype / Development  
-**Version:** 1.0.0
+**Version:** 1.1.0
 
 ## 1. Executive Summary
-PRISMA. adalah platform digital untuk memodernisasi cara klien industri berinteraksi dengan layanan pengemasan. Tujuannya adalah membangun kepercayaan melalui desain yang presisi dan sistem pemesanan yang efisien.
+PRISMA. adalah platform e-commerce B2B untuk **PT Solusi Kemasan Prismatama**, perusahaan manufaktur pengemasan yang telah berdiri sejak **1966**. Platform ini dirancang untuk menampilkan spesialisasi perusahaan dalam produksi botol industri berkekuatan tinggi (Glass, Polymer, Steel, Eco-friendly) dengan desain antarmuka yang modern, sinematik, dan responsif.
 
 ## 2. Target Audience
 - Manajer Logistik & Rantai Pasok (Supply Chain).
-- Pemilik Bisnis E-commerce Skala Besar.
-- Perusahaan Manufaktur yang membutuhkan standar pengemasan ekspor.
+- Perusahaan Laboratorium & Kimia.
+- Produsen Minuman & Kosmetik skala besar.
 
 ## 3. Functional Requirements
 ### A. Product Discovery
-- User dapat melihat katalog produk dengan gambar high-resolution.
-- User dapat memfilter produk berdasarkan kategori fungsional.
+- Katalog produk yang difokuskan pada varian botol industri (Bottle1 - Bottle4).
+- Bar kategori responsif (auto-fit grid) yang menampilkan semua opsi tanpa perlu *horizontal scroll* di perangkat mobile.
+- Gambar produk berkualitas tinggi untuk merepresentasikan kualitas material.
+
 ### B. Cart & Order Management
-- Sistem "Payload Manifest" (Keranjang) untuk mengumpulkan item sebelum checkout.
+- Sistem "Payload Manifest" (Keranjang) interaktif.
 - Penghitungan total nilai secara real-time.
+
 ### C. Checkout Workflow
-- Form pengumpulan data pengiriman (Shipping Protocol).
+- Form simulasi pengumpulan data pengiriman (Shipping Protocol).
 - Notifikasi sukses "Manifest Secured" setelah konfirmasi.
+
 ### D. Company Trust Signals
-- Profil perusahaan dengan statistik (Units Shipped, Success Rate).
-- Lokasi pabrik yang jelas melalui integrasi peta.
+- Latar belakang video sinematik di *Hero Section* untuk kesan premium.
+- Integrasi Google Maps interaktif yang mengarah ke markas pusat: **Jl. Simo Kwagean No.22, Surabaya**.
+- Penekanan pada warisan sejarah perusahaan (berdiri sejak 1966, 99% Success Rate).
 
 ## 4. Design & UX Requirements
-- **Theme:** Industrial-Minimalist.
-- **Color Palette:** Putih (#FFFFFF), Hitam (#000000), dan Accent Orange/Red untuk elemen aksi.
+- **Theme:** Industrial-Minimalist, Dark Mode Hero.
+- **Responsiveness:** Optimalisasi ketat untuk layar *smartphone* (Logo responsif, Grid kategori, Anti-horizontal scroll).
 - **Vibe:** Profesional, Kokoh, Terpercaya, dan High-Tech.
 
 ## 5. Technical Specifications
-- **Performance:** Skor Lighthouse > 90 untuk performa dan SEO.
-- **Scalability:** Struktur data produk di `constants.ts` harus mudah dipindahkan ke Headless CMS atau Database nantinya.
-- **AI Roadmap:** Integrasi `@google/genai` untuk chatbot asisten pemilihan kemasan berdasarkan dimensi barang.
+- **Frontend:** React 19 (TypeScript) + Vite 6.
+- **Styling:** Tailwind CSS v4.
+- **Assets:** Semua aset statis berada di direktori `public/images/` dengan format *lowercase* untuk memastikan kompatibilitas *deployment* di server berbasis Linux (seperti Vercel).
+- **Video:** Menggunakan satu file video ringan (`Hero.mp4`) sebagai latar belakang otomatis untuk stabilitas *render*.
 
 ## 6. Success Metrics
-- Kecepatan load halaman < 2 detik.
-- User flow dari landing hingga checkout tidak lebih dari 5 klik.
+- Kecepatan load halaman instan (penggunaan aset gambar/video yang telah dioptimasi).
+- Tidak ada isu *layout breaking* di perangkat *mobile*.
