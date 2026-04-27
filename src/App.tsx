@@ -30,21 +30,6 @@ export default function App() {
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
   const [checkoutStep, setCheckoutStep] = useState<'info' | 'success'>('info');
   const [activeCategory, setActiveCategory] = useState('All');
-  const [currentVideo, setCurrentVideo] = useState(0);
-
-  const heroVideos = [
-    '/Hero1.mp4',
-    '/Hero2.mp4',
-    '/Hero3.mp4',
-    '/Hero4.mp4'
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentVideo((prev) => (prev + 1) % heroVideos.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [heroVideos.length]);
 
   const categories = ['All', 'Boxes', 'Film', 'Tape', 'Protection'];
 
@@ -122,23 +107,17 @@ export default function App() {
       <main className="relative">
         {/* Hero Section */}
         <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-10 py-24 overflow-hidden bg-black text-white">
-          {/* Video Background Carousel */}
-          <div className="absolute inset-0 -z-20 bg-black">
-            <AnimatePresence>
-              <motion.video
-                key={heroVideos[currentVideo]}
-                src={heroVideos[currentVideo]}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 1 }}
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-            </AnimatePresence>
+          {/* Background Layer */}
+          <div className="absolute inset-0 z-0">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover"
+            >
+              <source src="/SOLUSI KEMASAN PRISMATAMA - Compressed.mp4" type="video/mp4" />
+            </video>
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/50 z-10"></div>
           </div>
