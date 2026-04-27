@@ -116,7 +116,7 @@ export default function App() {
               playsInline
               className="absolute inset-0 w-full h-full object-cover"
             >
-              <source src="/SOLUSI KEMASAN PRISMATAMA - Compressed.mp4" type="video/mp4" />
+              <source src="/Hero.mp4" type="video/mp4" />
             </video>
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/50 z-10"></div>
