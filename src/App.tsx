@@ -30,6 +30,21 @@ export default function App() {
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
   const [checkoutStep, setCheckoutStep] = useState<'info' | 'success'>('info');
   const [activeCategory, setActiveCategory] = useState('All');
+  const [currentVideo, setCurrentVideo] = useState(0);
+
+  const heroVideos = [
+    '/Hero1.mp4',
+    '/Hero2.mp4',
+    '/Hero3.mp4',
+    '/Hero4.mp4'
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentVideo((prev) => (prev + 1) % heroVideos.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [heroVideos.length]);
 
   const categories = ['All', 'Boxes', 'Film', 'Tape', 'Protection'];
 
@@ -106,24 +121,33 @@ export default function App() {
 
       <main className="relative">
         {/* Hero Section */}
-        <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-10 py-24 overflow-hidden bg-neutral-900">
-          {/* Background Layer - Forced Bottom */}
-          <div className="absolute inset-0 z-0 pointer-events-none">
-            <img 
-              src="/images/Hero/feed-pabrik-botol.jpg" 
-              alt="" 
-              className="w-full h-full object-cover"
-              style={{ display: 'block' }}
-            />
+        <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-10 py-24 overflow-hidden bg-black text-white">
+          {/* Background Layer */}
+          <div className="absolute inset-0 z-0">
+            <AnimatePresence mode="wait">
+              <motion.video
+                key={heroVideos[currentVideo]}
+                src={heroVideos[currentVideo]}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 1.5 }}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </AnimatePresence>
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black/50"></div>
+            <div className="absolute inset-0 bg-black/50 z-10"></div>
           </div>
 
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            className="relative z-10 text-white"
+            className="relative z-20"
           >
             <span className="section-label !text-accent">PT Solusi Kemasan Prismatama</span>
             <h1 className="hero-text mb-12 text-white">
