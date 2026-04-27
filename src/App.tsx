@@ -288,7 +288,7 @@ export default function App() {
               </div>
               <div className="relative group">
                 <img 
-                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1200" 
+                  src="/images/DSC03905.jpg" 
                   alt="Industrial Logistics"
                   className="w-full aspect-[4/3] object-cover rounded-sm grayscale-[20%] group-hover:grayscale-0 transition-all duration-1000 shadow-2xl"
                 />
