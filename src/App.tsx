@@ -193,20 +193,22 @@ export default function App() {
 
         {/* Categories Bar */}
         <div className="sticky top-20 bg-white/95 backdrop-blur-md z-40 border-b border-border py-4">
-          <div className="max-w-screen-2xl mx-auto px-6 md:px-10 overflow-x-auto flex gap-4 no-scrollbar">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setActiveCategory(cat)}
-                className={`flex-shrink-0 px-6 py-2 text-[10px] uppercase font-black tracking-widest border transition-all duration-300 rounded-sm ${
-                  activeCategory === cat 
-                    ? 'bg-accent border-accent text-white scale-105 shadow-lg shadow-accent/20' 
-                    : 'bg-transparent border-border text-text-tertiary hover:border-text-secondary hover:text-text-primary'
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
+          <div className="max-w-screen-2xl mx-auto px-4 md:px-10">
+            <div className="grid grid-cols-3 sm:grid-cols-5 gap-2 md:gap-4">
+              {categories.map((cat) => (
+                <button
+                  key={cat}
+                  onClick={() => setActiveCategory(cat)}
+                  className={`px-1 md:px-6 py-2.5 text-[9px] md:text-[10px] uppercase font-black tracking-widest border transition-all duration-300 rounded-sm flex items-center justify-center text-center ${
+                    activeCategory === cat 
+                      ? 'bg-accent border-accent text-white shadow-lg shadow-accent/20' 
+                      : 'bg-transparent border-border text-text-tertiary hover:border-text-secondary hover:text-text-primary'
+                  }`}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
 
