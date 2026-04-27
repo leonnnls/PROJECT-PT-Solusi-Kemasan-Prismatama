@@ -122,16 +122,16 @@ export default function App() {
       <main className="relative">
         {/* Hero Section */}
         <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-10 py-24 overflow-hidden bg-black text-white">
-          {/* Background Layer */}
-          <div className="absolute inset-0 z-0">
-            <AnimatePresence mode="wait">
+          {/* Video Background Carousel */}
+          <div className="absolute inset-0 -z-20 bg-black">
+            <AnimatePresence>
               <motion.video
                 key={heroVideos[currentVideo]}
                 src={heroVideos[currentVideo]}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                transition={{ duration: 1.5 }}
+                transition={{ duration: 1 }}
                 autoPlay
                 loop
                 muted
