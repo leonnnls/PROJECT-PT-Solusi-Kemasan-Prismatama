@@ -127,6 +127,7 @@ export default function App() {
             <AnimatePresence mode="wait">
               <motion.video
                 key={heroVideos[currentVideo]}
+                src={heroVideos[currentVideo]}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
@@ -136,9 +137,7 @@ export default function App() {
                 muted
                 playsInline
                 className="absolute inset-0 w-full h-full object-cover"
-              >
-                <source src={heroVideos[currentVideo]} type="video/mp4" />
-              </motion.video>
+              />
             </AnimatePresence>
             {/* Overlay to ensure text readability */}
             <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px]"></div>
