@@ -315,7 +315,7 @@ export default function App() {
                 </p>
                 <div className="pt-12">
                   <a 
-                    href="https://maps.app.goo.gl/1DT5dRaWxfaLd7KT9" 
+                    href="https://maps.app.goo.gl/3fXpGZ7zUv6D8mZk8" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center gap-6 group"
@@ -325,7 +325,7 @@ export default function App() {
                     </span>
                     <div className="flex flex-col text-left">
                       <span className="text-[10px] font-black uppercase tracking-[0.2em] text-text-tertiary mb-1">Open in Maps</span>
-                      <span className="text-sm font-black uppercase tracking-[0.1em] group-hover:text-accent transition-colors text-text-primary">Solusi Kemasan Prismatama</span>
+                      <span className="text-sm font-black uppercase tracking-[0.1em] group-hover:text-accent transition-colors text-text-primary">Jl. Simo Kwagean No.22, Surabaya</span>
                     </div>
                   </a>
                 </div>
@@ -339,7 +339,7 @@ export default function App() {
                   style={{ border: 0, filter: 'contrast(1.1) brightness(0.95)' }}
                   loading="lazy"
                   allowFullScreen
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.336!2d106.845!3d-6.175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTAnMzAuMCJTIDEwNsKwNTAnNDIuMCJF!5e0!3m2!1sen!2sid!4v1714150000000!5m2!1sen!2sid"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.771!2d112.723!3d-7.267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f93864455555%3A0x6d8f8a8a8a8a8a8a!2sJl.%20Simo%20Kwagean%20No.22%2C%20Petemon%2C%20Kec.%20Sawahan%2C%20Surabaya!5e0!3m2!1sen!2sid!4v1714150000000!5m2!1sen!2sid"
                 ></iframe>
                 <div className="absolute inset-0 pointer-events-none border-[32px] border-white"></div>
               </div>
