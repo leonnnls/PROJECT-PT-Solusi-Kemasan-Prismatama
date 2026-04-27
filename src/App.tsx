@@ -106,7 +106,7 @@ export default function App() {
 
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="min-h-[90vh] flex flex-col justify-center px-6 md:px-10 py-24 relative overflow-hidden text-white">
+        <section className="min-h-[90vh] flex flex-col justify-center px-6 md:px-10 py-24 relative overflow-hidden text-white bg-black">
           {/* Video Background */}
           <div className="absolute inset-0 -z-20">
             <video
@@ -114,9 +114,10 @@ export default function App() {
               loop
               muted
               playsInline
+              preload="auto"
               className="w-full h-full object-cover"
             >
-              <source src="/Images/hero-bg.mp4" type="video/mp4" />
+              <source src="/hero-bg.mp4" type="video/mp4" />
             </video>
             {/* Overlay to ensure text readability */}
             <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]"></div>
