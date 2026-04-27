@@ -7,7 +7,7 @@ export const PRODUCTS: Product[] = [
     price: 15,
     description: 'High-durability industrial bottle for chemical and beverage storage.',
     category: 'Bottle1',
-    image: 'https://images.unsplash.com/photo-1602143302326-19217833efb4?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1589365278144-c9e705f843ba?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: '2',
@@ -15,7 +15,7 @@ export const PRODUCTS: Product[] = [
     price: 45,
     description: 'Precision-engineered polymer container for laboratory grade materials.',
     category: 'Bottle2',
-    image: 'https://images.unsplash.com/photo-1527633546960-b3c7ae2131a8?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1614859324967-bdf2ac1bdf0d?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: '3',
@@ -23,7 +23,7 @@ export const PRODUCTS: Product[] = [
     price: 12,
     description: 'Lightweight steel alloy container for high-pressure industrial liquids.',
     category: 'Bottle3',
-    image: 'https://images.unsplash.com/photo-1536939459926-301728717817?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1610444315338-040263309a63?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: '4',
@@ -31,6 +31,6 @@ export const PRODUCTS: Product[] = [
     price: 35,
     description: 'Sustainable biodegradable container for environmentally conscious logistics.',
     category: 'Bottle4',
-    image: 'https://images.unsplash.com/photo-1597423498219-04418210827d?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1605634599554-e91823793616?auto=format&fit=crop&q=80&w=800'
   }
 ];
