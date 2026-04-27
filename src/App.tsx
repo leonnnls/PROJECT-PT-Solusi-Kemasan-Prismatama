@@ -30,6 +30,21 @@ export default function App() {
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
   const [checkoutStep, setCheckoutStep] = useState<'info' | 'success'>('info');
   const [activeCategory, setActiveCategory] = useState('All');
+  const [currentVideo, setCurrentVideo] = useState(0);
+
+  const heroVideos = [
+    '/Hero1.mp4',
+    '/Hero2.mp4',
+    '/Hero3.mp4',
+    '/Hero5.mp4'
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentVideo((prev) => (prev + 1) % heroVideos.length);
+    }, 5000); // Ganti video setiap 5 detik
+    return () => clearInterval(interval);
+  }, []);
 
   const categories = ['All', 'Boxes', 'Film', 'Tape', 'Protection'];
 
@@ -107,20 +122,26 @@ export default function App() {
       <main className="pt-20">
         {/* Hero Section */}
         <section className="min-h-[90vh] flex flex-col justify-center px-6 md:px-10 py-24 relative overflow-hidden text-white bg-black">
-          {/* Video Background */}
+          {/* Video Background Carousel */}
           <div className="absolute inset-0 -z-20">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              preload="auto"
-              className="w-full h-full object-cover"
-            >
-              <source src="/prismatama-hero-v1.mp4" type="video/mp4" />
-            </video>
+            <AnimatePresence mode="wait">
+              <motion.video
+                key={heroVideos[currentVideo]}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 1.5 }}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover"
+              >
+                <source src={heroVideos[currentVideo]} type="video/mp4" />
+              </motion.video>
+            </AnimatePresence>
             {/* Overlay to ensure text readability */}
-            <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]"></div>
+            <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px]"></div>
           </div>
 
           <motion.div 
