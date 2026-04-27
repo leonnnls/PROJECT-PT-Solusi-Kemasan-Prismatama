@@ -124,21 +124,17 @@ export default function App() {
         <section className="min-h-[90vh] flex flex-col justify-center px-6 md:px-10 py-24 relative overflow-hidden text-white bg-black">
           {/* Video Background Carousel */}
           <div className="absolute inset-0 -z-20">
-            <AnimatePresence mode="wait">
-              <motion.video
-                key={heroVideos[currentVideo]}
-                src={heroVideos[currentVideo]}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 1.5 }}
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-            </AnimatePresence>
+            <video
+              key={heroVideos[currentVideo]}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
+              style={{ opacity: 1 }}
+            >
+              <source src={heroVideos[currentVideo]} type="video/mp4" />
+            </video>
             {/* Overlay to ensure text readability */}
             <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px]"></div>
           </div>
