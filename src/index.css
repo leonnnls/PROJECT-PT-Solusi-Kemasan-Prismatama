@@ -28,7 +28,7 @@ html, body {
 }
 
 .hero-text {
-  font-size: 11vw;
+  font-size: clamp(3.5rem, 12vw, 10rem);
   line-height: 0.85;
   letter-spacing: -0.04em;
   font-weight: 900;
@@ -41,7 +41,7 @@ html, body {
 }
 
 .product-card {
-  @apply bg-white border border-border transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.05)];
+  @apply bg-white border border-border transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.05)] rounded-none;
 }
 
 .product-card:hover {
@@ -49,13 +49,13 @@ html, body {
 }
 
 .cart-panel {
-  @apply bg-white border-l border-border;
+  @apply bg-white border-l border-border w-full md:max-w-md;
 }
 
 .section-label {
-  @apply text-accent text-[10px] font-black uppercase tracking-[0.4em] mb-6 block;
+  @apply text-accent text-[9px] md:text-[10px] font-black uppercase tracking-[0.4em] mb-4 md:mb-6 block;
 }
 
 .input-field {
-  @apply w-full bg-transparent border-b border-border py-3 text-sm font-bold focus:outline-none focus:border-accent transition-colors uppercase tracking-widest text-text-primary placeholder:text-text-tertiary;
+  @apply w-full bg-transparent border-b border-border py-4 text-sm font-bold focus:outline-none focus:border-accent transition-colors uppercase tracking-widest text-text-primary placeholder:text-text-tertiary rounded-none;
 }

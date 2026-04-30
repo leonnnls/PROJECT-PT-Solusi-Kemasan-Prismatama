@@ -76,12 +76,12 @@ export default function App() {
   return (
     <div className="min-h-screen bg-neutral-background text-text-primary selection:bg-accent selection:text-white overflow-x-hidden">
       {/* Navigation */}
-      <header className="fixed top-0 w-full h-16 md:h-24 px-6 md:px-10 flex items-center justify-between border-b border-border bg-white/80 backdrop-blur-xl z-50">
+      <header className="fixed top-0 w-full h-16 md:h-24 px-4 md:px-10 flex items-center justify-between border-b border-border bg-white/80 backdrop-blur-xl z-50">
         <div className="flex items-center gap-2">
           <img 
             src="/images/brand/logo.png" 
             alt="Prismatama Logo" 
-            className="h-10 md:h-20 w-auto object-contain"
+            className="h-8 md:h-20 w-auto object-contain"
           />
         </div>
         
@@ -132,19 +132,19 @@ export default function App() {
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             className="relative z-20"
           >
-            <span className="section-label !text-accent !text-sm !mb-8">PT Solusi Kemasan Prismatama</span>
-            <h1 className="hero-text mb-12 text-white">
+            <span className="section-label !text-accent">PT Solusi Kemasan Prismatama</span>
+            <h1 className="hero-text mb-8 md:mb-12 text-white">
               PACKAGING<br/>
               <span className="hollow-text !text-white opacity-80">SYSTEMS</span><br/>
               EVOLVED
             </h1>
             
-            <div className="flex flex-col md:flex-row gap-12 items-start md:items-end justify-between">
-              <p className="max-w-md text-white/80 text-base leading-relaxed uppercase tracking-wider font-medium">
+            <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start md:items-end justify-between">
+              <p className="max-w-md text-white/80 text-sm md:text-base leading-relaxed uppercase tracking-wider font-medium">
                 Solusi Kemasan Prismatama provides high-durability protection for global logistics. 
                 Engineered for resilience, designed for precision.
               </p>
-              <a href="#collection" className="bg-white text-text-primary px-10 py-6 font-black text-[10px] uppercase tracking-[0.2em] hover:bg-accent hover:text-white transition-all duration-500 flex items-center gap-4 group shadow-xl">
+              <a href="#collection" className="w-full md:w-auto bg-white text-text-primary px-8 md:px-10 py-5 md:py-6 font-black text-[10px] uppercase tracking-[0.2em] hover:bg-accent hover:text-white transition-all duration-500 flex items-center justify-center md:justify-start gap-4 group shadow-xl">
                 Explore The Catalog
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform" />
               </a>
@@ -153,38 +153,38 @@ export default function App() {
         </section>
 
         {/* Company Profile Section */}
-        <section id="about" className="py-32 bg-white border-b border-border">
+        <section id="about" className="py-24 md:py-32 bg-white border-b border-border">
           <div className="max-w-4xl mx-auto px-6 text-center">
-            <div className="space-y-16">
-              <div className="space-y-6">
-                <span className="text-accent text-xs font-black uppercase tracking-[0.6em] block">Our Identity</span>
-                <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none text-text-primary">
+            <div className="space-y-12 md:space-y-16">
+              <div className="space-y-4 md:space-y-6">
+                <span className="text-accent text-[10px] md:text-xs font-black uppercase tracking-[0.6em] block">Our Identity</span>
+                <h2 className="text-4xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] text-text-primary">
                   LEADING THE<br/><span className="text-accent">PACKAGING</span> ERA
                 </h2>
               </div>
               
-              <div className="space-y-10 max-w-2xl mx-auto">
-                <p className="text-text-secondary text-lg md:text-xl leading-relaxed font-medium uppercase tracking-wider">
+              <div className="space-y-8 md:space-y-10 max-w-2xl mx-auto">
+                <p className="text-text-secondary text-base md:text-xl leading-relaxed font-medium uppercase tracking-wider">
                   Solusi Kemasan Prismatama berdiri sebagai pemimpin dalam inovasi pengemasan industri sejak 1966. Kami adalah mitra strategis dalam rantai pasokan global Anda.
                 </p>
                 
-                <p className="text-text-tertiary text-sm leading-relaxed uppercase tracking-[0.1em] font-medium opacity-80">
+                <p className="text-text-tertiary text-[11px] md:text-sm leading-relaxed uppercase tracking-[0.1em] font-medium opacity-80">
                   Kami mengintegrasikan teknologi manufaktur mutakhir dengan keberlanjutan lingkungan untuk memberikan proteksi maksimal pada aset berharga Anda. Komitmen kami adalah pada presisi, keandalan, dan efisiensi tanpa kompromi.
                 </p>
               </div>
 
-              <div className="flex flex-wrap justify-center gap-16 pt-16 border-t border-border">
+              <div className="flex flex-wrap justify-center gap-8 md:gap-16 pt-12 md:pt-16 border-t border-border">
                 <div className="space-y-1">
-                  <h5 className="text-5xl font-black text-text-primary">150+</h5>
-                  <p className="text-[11px] font-black uppercase tracking-widest text-text-tertiary">Industrial Clients</p>
+                  <h5 className="text-4xl md:text-5xl font-black text-text-primary">150+</h5>
+                  <p className="text-[9px] md:text-[11px] font-black uppercase tracking-widest text-text-tertiary">Industrial Clients</p>
                 </div>
                 <div className="space-y-1">
-                  <h5 className="text-5xl font-black text-text-primary">24M</h5>
-                  <p className="text-[11px] font-black uppercase tracking-widest text-text-tertiary">Units Shipped</p>
+                  <h5 className="text-4xl md:text-5xl font-black text-text-primary">24M</h5>
+                  <p className="text-[9px] md:text-[11px] font-black uppercase tracking-widest text-text-tertiary">Units Shipped</p>
                 </div>
                 <div className="space-y-1">
-                  <h5 className="text-5xl font-black text-text-primary">99%</h5>
-                  <p className="text-[11px] font-black uppercase tracking-widest text-text-tertiary">Success Rate</p>
+                  <h5 className="text-4xl md:text-5xl font-black text-text-primary">99%</h5>
+                  <p className="text-[9px] md:text-[11px] font-black uppercase tracking-widest text-text-tertiary">Success Rate</p>
                 </div>
               </div>
             </div>
@@ -256,32 +256,32 @@ export default function App() {
         </section>
 
         {/* Philosophy Section */}
-        <section id="philosophy" className="bg-surface border-y border-border py-48">
+        <section id="philosophy" className="bg-surface border-y border-border py-24 md:py-48">
           <div className="max-w-7xl mx-auto px-6 md:px-10">
-            <h2 className="text-text-primary/[0.03] text-9xl md:text-[220px] font-black leading-none mb-24 tracking-tighter uppercase pointer-events-none select-none">VISION</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+            <h2 className="text-text-primary/[0.03] text-7xl md:text-[220px] font-black leading-none mb-12 md:mb-24 tracking-tighter uppercase pointer-events-none select-none">VISION</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-center">
               <div>
-                <p className="text-3xl md:text-5xl font-black leading-tight uppercase mb-12 text-text-primary">
-                  WE DON'T JUST <span className="text-accent underline decoration-4 underline-offset-8">WRAP</span> PRODUCTS. <br/>
+                <p className="text-2xl md:text-5xl font-black leading-tight uppercase mb-8 md:mb-12 text-text-primary">
+                  WE DON'T JUST <span className="text-accent underline decoration-2 md:decoration-4 underline-offset-4 md:underline-offset-8">WRAP</span> PRODUCTS. <br/>
                   WE ENGINEER <span className="hollow-text italic">SURVIVAL</span>.
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                  <div className="flex items-start gap-5">
-                    <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <ShieldCheck className="w-6 h-6 text-accent" />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                  <div className="flex items-start gap-4 md:gap-5">
+                    <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                      <ShieldCheck className="w-5 h-5 md:w-6 md:h-6 text-accent" />
                     </div>
                     <div>
-                      <h5 className="text-xs font-black uppercase tracking-widest mb-3 text-text-primary">Zero Failure</h5>
-                      <p className="text-[11px] leading-relaxed text-text-secondary uppercase tracking-[0.1em] font-medium">Our materials exceed ISO standards for impact and stress resistance.</p>
+                      <h5 className="text-[10px] md:text-xs font-black uppercase tracking-widest mb-2 md:mb-3 text-text-primary">Zero Failure</h5>
+                      <p className="text-[10px] md:text-[11px] leading-relaxed text-text-secondary uppercase tracking-[0.1em] font-medium">Our materials exceed ISO standards for impact and stress resistance.</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-5">
-                    <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <Zap className="w-6 h-6 text-accent" />
+                  <div className="flex items-start gap-4 md:gap-5">
+                    <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                      <Zap className="w-5 h-5 md:w-6 md:h-6 text-accent" />
                     </div>
                     <div>
-                      <h5 className="text-xs font-black uppercase tracking-widest mb-3 text-text-primary">Efficiency</h5>
-                      <p className="text-[11px] leading-relaxed text-text-secondary uppercase tracking-[0.1em] font-medium">Optimized for speed in high-volume industrial shipping environments.</p>
+                      <h5 className="text-[10px] md:text-xs font-black uppercase tracking-widest mb-2 md:mb-3 text-text-primary">Efficiency</h5>
+                      <p className="text-[10px] md:text-[11px] leading-relaxed text-text-secondary uppercase tracking-[0.1em] font-medium">Optimized for speed in high-volume industrial shipping environments.</p>
                     </div>
                   </div>
                 </div>
@@ -300,40 +300,40 @@ export default function App() {
         </section>
 
         {/* Map / Location Section */}
-        <section id="location" className="py-48 px-6 md:px-10">
+        <section id="location" className="py-24 md:py-48 px-6 md:px-10">
           <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col md:flex-row gap-32 items-center">
-              <div className="flex-1 space-y-10">
-                <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/5 border border-accent/10 rounded-none text-[10px] font-black uppercase tracking-[0.3em] text-accent">
+            <div className="flex flex-col md:flex-row gap-16 md:gap-32 items-center">
+              <div className="flex-1 space-y-8 md:space-y-10 w-full">
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/5 border border-accent/10 rounded-none text-[9px] md:text-[10px] font-black uppercase tracking-[0.3em] text-accent">
                   <MapPin className="w-3 h-3" />
                   Headquarters
                 </div>
-                <h2 className="text-6xl font-black uppercase tracking-tighter leading-none text-text-primary">
+                <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-none text-text-primary">
                   LOCATE OUR <br/><span className="hollow-text">FACILITY</span>
                 </h2>
-                <p className="text-text-secondary text-base leading-relaxed max-w-sm uppercase tracking-wider font-medium">
+                <p className="text-text-secondary text-sm md:text-base leading-relaxed max-w-sm uppercase tracking-wider font-medium">
                   Our strategic distribution centers are ready to fulfill your enterprise needs. 
                   Visit us in Prismatama for a direct consultation on your logistics infrastructure.
                 </p>
-                <div className="pt-12">
+                <div className="pt-8 md:pt-12">
                   <a 
                     href="https://maps.app.goo.gl/3fXpGZ7zUv6D8mZk8" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center gap-6 group"
+                    className="flex items-center gap-4 md:gap-6 group"
                   >
-                    <span className="w-20 h-20 rounded-full border border-border flex items-center justify-center group-hover:border-accent group-hover:bg-accent transition-all duration-500 shadow-sm group-hover:shadow-accent/20">
-                      <ExternalLink className="w-6 h-6 group-hover:scale-110 transition-transform group-hover:text-white" />
+                    <span className="w-16 h-16 md:w-20 md:h-20 rounded-full border border-border flex items-center justify-center group-hover:border-accent group-hover:bg-accent transition-all duration-500 shadow-sm group-hover:shadow-accent/20">
+                      <ExternalLink className="w-5 h-5 md:w-6 md:h-6 group-hover:scale-110 transition-transform group-hover:text-white" />
                     </span>
                     <div className="flex flex-col text-left">
-                      <span className="text-[10px] font-black uppercase tracking-[0.2em] text-text-tertiary mb-1">Open in Maps</span>
-                      <span className="text-sm font-black uppercase tracking-[0.1em] group-hover:text-accent transition-colors text-text-primary">Jl. Simo Kwagean No.22, Surabaya</span>
+                      <span className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em] text-text-tertiary mb-1">Open in Maps</span>
+                      <span className="text-xs md:text-sm font-black uppercase tracking-[0.1em] group-hover:text-accent transition-colors text-text-primary">Jl. Simo Kwagean No.22, Surabaya</span>
                     </div>
                   </a>
                 </div>
               </div>
               
-              <div className="flex-1 w-full aspect-video md:aspect-square bg-surface overflow-hidden relative border border-border shadow-2xl rounded-sm">
+              <div className="flex-1 w-full aspect-[4/3] md:aspect-square bg-surface overflow-hidden relative border border-border shadow-2xl rounded-sm">
                 <iframe
                   title="Company Location"
                   width="100%"
@@ -350,34 +350,34 @@ export default function App() {
         </section>
 
         {/* Benefits Section */}
-        <section className="bg-surface-muted border-y border-border py-40">
+        <section className="bg-surface-muted border-y border-border py-24 md:py-40">
           <div className="max-w-7xl mx-auto px-6 md:px-10">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-24">
-              <div className="space-y-8 group">
-                <div className="w-16 h-16 rounded-2xl bg-white border border-border flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:bg-accent group-hover:border-accent">
-                  <Truck className="w-8 h-8 text-accent group-hover:text-white transition-colors" />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-24">
+              <div className="space-y-6 md:space-y-8 group">
+                <div className="w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl bg-white border border-border flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:bg-accent group-hover:border-accent">
+                  <Truck className="w-6 h-6 md:w-8 md:h-8 text-accent group-hover:text-white transition-colors" />
                 </div>
-                <div className="space-y-4">
-                  <h4 className="text-xl font-black uppercase tracking-tight text-text-primary">Global Express</h4>
-                  <p className="text-[11px] text-text-secondary uppercase tracking-[0.2em] leading-relaxed font-bold">Integrated shipping solutions with real-time payload monitoring and global reach.</p>
-                </div>
-              </div>
-              <div className="space-y-8 group">
-                <div className="w-16 h-16 rounded-2xl bg-white border border-border flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:bg-accent group-hover:border-accent">
-                  <Package className="w-8 h-8 text-accent group-hover:text-white transition-colors" />
-                </div>
-                <div className="space-y-4">
-                  <h4 className="text-xl font-black uppercase tracking-tight text-text-primary">Rapid Manifest</h4>
-                  <p className="text-[11px] text-text-secondary uppercase tracking-[0.2em] leading-relaxed font-bold">Automated generation of packaging labels and enterprise-grade transit documentation.</p>
+                <div className="space-y-3 md:space-y-4">
+                  <h4 className="text-lg md:text-xl font-black uppercase tracking-tight text-text-primary">Global Express</h4>
+                  <p className="text-[10px] md:text-[11px] text-text-secondary uppercase tracking-[0.2em] leading-relaxed font-bold">Integrated shipping solutions with real-time payload monitoring and global reach.</p>
                 </div>
               </div>
-              <div className="space-y-8 group">
-                <div className="w-16 h-16 rounded-2xl bg-white border border-border flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:bg-accent group-hover:border-accent">
-                  <CreditCard className="w-8 h-8 text-accent group-hover:text-white transition-colors" />
+              <div className="space-y-6 md:space-y-8 group">
+                <div className="w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl bg-white border border-border flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:bg-accent group-hover:border-accent">
+                  <Package className="w-6 h-6 md:w-8 md:h-8 text-accent group-hover:text-white transition-colors" />
                 </div>
-                <div className="space-y-4">
-                  <h4 className="text-xl font-black uppercase tracking-tight text-text-primary">Tiered Billing</h4>
-                  <p className="text-[11px] text-text-secondary uppercase tracking-[0.2em] leading-relaxed font-bold">Flexible enterprise credit cycles and volume-based pricing for large-scale operations.</p>
+                <div className="space-y-3 md:space-y-4">
+                  <h4 className="text-lg md:text-xl font-black uppercase tracking-tight text-text-primary">Rapid Manifest</h4>
+                  <p className="text-[10px] md:text-[11px] text-text-secondary uppercase tracking-[0.2em] leading-relaxed font-bold">Automated generation of packaging labels and enterprise-grade transit documentation.</p>
+                </div>
+              </div>
+              <div className="space-y-6 md:space-y-8 group">
+                <div className="w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-2xl bg-white border border-border flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:bg-accent group-hover:border-accent">
+                  <CreditCard className="w-6 h-6 md:w-8 md:h-8 text-accent group-hover:text-white transition-colors" />
+                </div>
+                <div className="space-y-3 md:space-y-4">
+                  <h4 className="text-lg md:text-xl font-black uppercase tracking-tight text-text-primary">Tiered Billing</h4>
+                  <p className="text-[10px] md:text-[11px] text-text-secondary uppercase tracking-[0.2em] leading-relaxed font-bold">Flexible enterprise credit cycles and volume-based pricing for large-scale operations.</p>
                 </div>
               </div>
             </div>
