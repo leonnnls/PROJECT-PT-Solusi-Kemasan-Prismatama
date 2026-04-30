@@ -14,7 +14,7 @@ PRISMA. adalah platform e-commerce B2B untuk **PT Solusi Kemasan Prismatama**, p
 
 ## 3. Functional Requirements
 ### A. Product Discovery
-- Katalog produk yang difokuskan pada varian botol industri (Bottle1 - Bottle4).
+- Katalog produk yang difokuskan pada varian botol industri (15ml, 30ml, Glass, Premium).
 - Bar kategori responsif (auto-fit grid) yang menampilkan semua opsi tanpa perlu *horizontal scroll* di perangkat mobile.
 - Gambar produk berkualitas tinggi untuk merepresentasikan kualitas material.
 

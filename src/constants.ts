@@ -1,36 +1,91 @@
 import { Product } from './types';
 
 export const PRODUCTS: Product[] = [
+  // 15ml Series
   {
-    id: '1',
-    name: 'Industrial Glass Bottle v1',
-    price: 15,
-    description: 'High-durability industrial bottle for chemical and beverage storage.',
-    category: 'Bottle1',
-    image: '/images/products/bottle-glass.jpg'
-  },
-  {
-    id: '2',
-    name: 'Reinforced Polymer Bottle',
-    price: 45,
-    description: 'Precision-engineered polymer container for laboratory grade materials.',
-    category: 'Bottle2',
-    image: '/images/products/bottle-polymer.jpg'
-  },
-  {
-    id: '3',
-    name: 'Aero-Grade Steel Bottle',
+    id: '15ml-bening',
+    name: 'Industrial 15ml - Clear',
     price: 12,
-    description: 'Lightweight steel alloy container for high-pressure industrial liquids.',
-    category: 'Bottle3',
-    image: '/images/products/bottle-steel.jpg'
+    description: 'Precision 15ml container with high-clarity finish for industrial grade liquids.',
+    category: '15ml Series',
+    image: '/images/products/display/Botol15ml_Bening.png'
   },
   {
-    id: '4',
-    name: 'Eco-Protection Bottle',
+    id: '15ml-hitam',
+    name: 'Industrial 15ml - Onyx',
+    price: 14,
+    description: 'UV-protective 15ml container in matte black finish for light-sensitive materials.',
+    category: '15ml Series',
+    image: '/images/products/display/Botol15ml_Hitam.png'
+  },
+  {
+    id: '15ml-warna',
+    name: 'Industrial 15ml - Multi',
+    price: 15,
+    description: 'Standard 15ml industrial bottle available in specialized safety colors.',
+    category: '15ml Series',
+    image: '/images/products/display/Botol15ml_Warna.png'
+  },
+
+  // 30ml Series
+  {
+    id: '30ml-bening',
+    name: 'Industrial 30ml - Clear',
+    price: 18,
+    description: 'High-durability 30ml polymer container for chemical and beverage storage.',
+    category: '30ml Series',
+    image: '/images/products/display/Botol30ml_Bening.png'
+  },
+  {
+    id: '30ml-hitam',
+    name: 'Industrial 30ml - Onyx',
+    price: 20,
+    description: 'Reinforced 30ml black container designed for chemical stability.',
+    category: '30ml Series',
+    image: '/images/products/display/Botol30ml_Hitam.png'
+  },
+  {
+    id: '30ml-warna',
+    name: 'Industrial 30ml - Multi',
+    price: 22,
+    description: 'Versatile 30ml container with reinforced structure for high-pressure transit.',
+    category: '30ml Series',
+    image: '/images/products/display/Botol30ml_warna.png'
+  },
+
+  // Glass 30ml Series
+  {
+    id: 'kaca-30ml-bening',
+    name: 'Glass Series 30ml - Clear',
+    price: 28,
+    description: 'Premium heavy-duty glass container for high-end industrial chemicals.',
+    category: 'Glass 30ml',
+    image: '/images/products/display/BotolKaca30ml_Bening.png'
+  },
+  {
+    id: 'kaca-30ml-hitam',
+    name: 'Glass Series 30ml - Onyx',
+    price: 32,
+    description: 'Aero-grade black glass with superior impact resistance.',
+    category: 'Glass 30ml',
+    image: '/images/products/display/BotolKaca30ml_Hitam.png'
+  },
+  {
+    id: 'kaca-30ml-warna',
+    name: 'Glass Series 30ml - Multi',
     price: 35,
-    description: 'Sustainable biodegradable container for environmentally conscious logistics.',
-    category: 'Bottle4',
-    image: '/images/products/bottle-eco.jpg'
+    description: 'Professional grade colored glass for content identification and UV filtering.',
+    category: 'Glass 30ml',
+    image: '/images/products/display/BotolKaca30ml_Warna.png'
+  },
+
+  // Premium Unit
+  {
+    id: 'premium-display',
+    name: 'Elite Glass Display Unit',
+    price: 85,
+    description: 'Exhibition-grade glass packaging system for high-value asset presentation.',
+    category: 'Premium Unit',
+    image: '/images/products/display/BocolKacaDisplay.png'
   }
 ];
