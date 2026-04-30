@@ -247,7 +247,7 @@ export default function App() {
                       <h3 className="text-[9px] md:text-xs font-black uppercase tracking-widest group-hover:text-accent transition-colors text-text-primary leading-tight">{product.name}</h3>
                       <p className="text-[8px] md:text-[10px] text-text-tertiary uppercase tracking-widest font-bold">{product.category}</p>
                     </div>
-                    <span className="text-xs md:text-sm font-black text-accent">${product.price}</span>
+                    <span className="text-xs md:text-sm font-black text-accent">RP. {product.price.toLocaleString('id-ID')}</span>
                   </div>
                 </motion.div>
               ))}
@@ -457,7 +457,7 @@ export default function App() {
                               <Plus className="w-2.5 h-2.5" />
                             </button>
                           </div>
-                          <span className="text-[11px] font-black uppercase tracking-widest text-accent">${item.price * item.quantity}</span>
+                          <span className="text-[11px] font-black uppercase tracking-widest text-accent">RP. {(item.price * item.quantity).toLocaleString('id-ID')}</span>
                         </div>
                       </div>
                     </div>
@@ -469,7 +469,7 @@ export default function App() {
                 <div className="p-10 border-t border-border bg-surface">
                   <div className="flex justify-between items-center mb-10">
                     <span className="text-[10px] font-black uppercase tracking-[0.3em] text-text-tertiary">Total Value</span>
-                    <span className="text-2xl font-black text-accent tracking-tighter">${cartTotal.toLocaleString()}</span>
+                    <span className="text-2xl font-black text-accent tracking-tighter">RP. {cartTotal.toLocaleString('id-ID')}</span>
                   </div>
                   <button 
                     onClick={() => {
