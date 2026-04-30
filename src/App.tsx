@@ -213,7 +213,7 @@ export default function App() {
         </div>
 
         {/* Product Grid */}
-        <section id="collection" className="px-4 md:px-10 py-16 md:py-32 min-h-screen">
+        <section id="collection" className="px-4 md:px-10 pt-6 pb-16 md:py-32 min-h-screen">
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8">
             <AnimatePresence mode="popLayout">
               {filteredProducts.map((product) => (
