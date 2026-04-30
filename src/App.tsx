@@ -213,8 +213,8 @@ export default function App() {
         </div>
 
         {/* Product Grid */}
-        <section id="collection" className="px-6 md:px-10 py-16 md:py-32 min-h-screen">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <section id="collection" className="px-4 md:px-10 py-16 md:py-32 min-h-screen">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8">
             <AnimatePresence mode="popLayout">
               {filteredProducts.map((product) => (
                 <motion.div
@@ -224,30 +224,30 @@ export default function App() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.98 }}
                   transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                  className="product-card group flex flex-col p-8 bg-white"
+                  className="product-card group flex flex-col p-4 md:p-8 bg-white"
                 >
-                  <div className="aspect-square bg-surface overflow-hidden mb-10 relative rounded-sm">
+                  <div className="aspect-square bg-surface overflow-hidden mb-4 md:mb-10 relative rounded-sm">
                     <img 
                       src={product.image} 
                       alt={product.name} 
                       className="w-full h-full object-cover grayscale-[30%] opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000"
                     />
-                    <div className="absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                    <div className="absolute inset-x-0 bottom-0 p-2 md:p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
                       <button 
                         onClick={() => addToCart(product)}
-                        className="w-full py-5 bg-text-primary text-white text-[10px] font-black uppercase tracking-[0.2em] hover:bg-accent transition-colors shadow-2xl"
+                        className="w-full py-3 md:py-5 bg-text-primary text-white text-[8px] md:text-[10px] font-black uppercase tracking-[0.2em] hover:bg-accent transition-colors shadow-2xl"
                       >
                         Add to Bag
                       </button>
                     </div>
                   </div>
                   
-                  <div className="flex justify-between items-start gap-4">
-                    <div className="space-y-2">
-                      <h3 className="text-xs font-black uppercase tracking-widest group-hover:text-accent transition-colors text-text-primary">{product.name}</h3>
-                      <p className="text-[10px] text-text-tertiary uppercase tracking-widest font-bold">{product.category}</p>
+                  <div className="flex flex-col md:flex-row justify-between items-start gap-2 md:gap-4">
+                    <div className="space-y-1 md:space-y-2">
+                      <h3 className="text-[9px] md:text-xs font-black uppercase tracking-widest group-hover:text-accent transition-colors text-text-primary leading-tight">{product.name}</h3>
+                      <p className="text-[8px] md:text-[10px] text-text-tertiary uppercase tracking-widest font-bold">{product.category}</p>
                     </div>
-                    <span className="text-sm font-black text-accent">${product.price}</span>
+                    <span className="text-xs md:text-sm font-black text-accent">${product.price}</span>
                   </div>
                 </motion.div>
               ))}
