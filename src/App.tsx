@@ -192,7 +192,7 @@ export default function App() {
         </section>
 
         {/* Categories Bar */}
-        <div className="sticky top-20 bg-white/95 backdrop-blur-md z-40 border-b border-border py-4">
+        <div className="sticky top-16 md:top-24 bg-white/95 backdrop-blur-md z-40 border-b border-border py-4">
           <div className="w-full mx-auto px-2 md:px-10">
             <div className="grid grid-cols-5 gap-1 md:gap-4">
               {categories.map((cat) => (
@@ -213,7 +213,7 @@ export default function App() {
         </div>
 
         {/* Product Grid */}
-        <section id="collection" className="px-6 md:px-10 py-32 min-h-screen">
+        <section id="collection" className="px-6 md:px-10 py-16 md:py-32 min-h-screen">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <AnimatePresence mode="popLayout">
               {filteredProducts.map((product) => (
