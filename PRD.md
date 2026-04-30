@@ -39,8 +39,8 @@ PRISMA. adalah platform e-commerce B2B untuk **PT Solusi Kemasan Prismatama**, p
 ## 5. Technical Specifications
 - **Frontend:** React 19 (TypeScript) + Vite 6.
 - **Styling:** Tailwind CSS v4.
-- **Assets:** Semua aset statis berada di direktori `public/images/` dengan format *lowercase* untuk memastikan kompatibilitas *deployment* di server berbasis Linux (seperti Vercel).
-- **Video:** Menggunakan satu file video ringan (`Hero.mp4`) sebagai latar belakang otomatis untuk stabilitas *render*.
+- **Assets:** Semua aset statis berada di direktori `public/images/` dan `public/videos/` dengan format *lowercase* untuk memastikan kompatibilitas *deployment* di server berbasis Linux (seperti Vercel).
+- **Video:** Menggunakan satu file video ringan (`videos/hero.mp4`) sebagai latar belakang otomatis untuk stabilitas *render*.
 
 ## 6. Success Metrics
 - Kecepatan load halaman instan (penggunaan aset gambar/video yang telah dioptimasi).

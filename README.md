@@ -10,7 +10,7 @@ Platform katalog e-commerce B2B modern untuk **PT Solusi Kemasan Prismatama**, p
 - **Build Tool:** Vite 6
 
 ## 📦 Fitur Utama
-- **Cinematic Hero Section:** Latar belakang video yang diputar otomatis (`Hero.mp4`) untuk memberikan kesan pertama yang kuat.
+- **Cinematic Hero Section:** Latar belakang video yang diputar otomatis (`/videos/hero.mp4`) untuk memberikan kesan pertama yang kuat.
 - **Industrial Bottle Catalog:** Filter produk responsif berdasarkan varian botol (Bottle1 - Bottle4). Grid kategori otomatis menyesuaikan layar *mobile*.
 - **Advanced Cart System:** Manajemen *payload* keranjang belanja dengan animasi *spring*.
 - **Mobile-First UX:** Desain dioptimalkan untuk *smartphone*, termasuk *header* dinamis, pencegahan *horizontal scroll*, dan ukuran logo adaptif.
@@ -36,7 +36,7 @@ Platform katalog e-commerce B2B modern untuk **PT Solusi Kemasan Prismatama**, p
 - `/src/constants.ts`: Pusat data produk (katalog botol) dan URL gambar.
 - `/src/App.tsx`: Logika utama UI, *state management* keranjang, dan pengaturan *layout*.
 - `/public/images/`: Semua aset visual statis (Logo, Ikon). Penamaan folder menggunakan **huruf kecil** untuk mencegah *error case-sensitive* saat *deploy* ke Vercel.
-- `/public/Hero.mp4`: File video latar belakang utama.
+- `/public/videos/hero.mp4`: File video latar belakang utama.
 
 ## ⚙️ Deployment Notes (Vercel)
 Proyek ini sudah dikonfigurasi agar ramah *deployment* di Vercel:

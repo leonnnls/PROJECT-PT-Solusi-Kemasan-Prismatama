@@ -79,7 +79,7 @@ export default function App() {
       <header className="fixed top-0 w-full h-16 md:h-24 px-6 md:px-10 flex items-center justify-between border-b border-border bg-white/80 backdrop-blur-xl z-50">
         <div className="flex items-center gap-2">
           <img 
-            src="/images/icon/logo.png" 
+            src="/images/brand/logo.png" 
             alt="Prismatama Logo" 
             className="h-10 md:h-20 w-auto object-contain"
           />
@@ -120,7 +120,7 @@ export default function App() {
               playsInline
               className="absolute inset-0 w-full h-full object-cover"
             >
-              <source src="/Hero.mp4" type="video/mp4" />
+              <source src="/videos/hero.mp4" type="video/mp4" />
             </video>
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/50 z-10"></div>
@@ -288,7 +288,7 @@ export default function App() {
               </div>
               <div className="relative group">
                 <img 
-                  src="/images/DSC03905.jpg" 
+                  src="/images/gallery/factory-1.jpg" 
                   alt="Industrial Logistics"
                   className="w-full aspect-[4/3] object-cover rounded-sm grayscale-[20%] group-hover:grayscale-0 transition-all duration-1000 shadow-2xl"
                 />
@@ -388,7 +388,7 @@ export default function App() {
       {/* Footer */}
       <footer className="px-6 md:px-10 py-20 border-t border-border flex flex-col md:flex-row justify-between items-center gap-16 bg-white">
         <img 
-          src="/images/icon/logo.png" 
+          src="/images/brand/logo.png" 
           alt="Prismatama Logo" 
           className="h-16 w-auto grayscale opacity-80"
         />
