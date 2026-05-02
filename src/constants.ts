@@ -77,15 +77,5 @@ export const PRODUCTS: Product[] = [
     description: 'Professional grade colored glass for content identification and UV filtering.',
     category: 'Glass 30ml',
     image: '/images/products/display/BotolKaca30ml_Warna.png'
-  },
-
-  // Premium Unit
-  {
-    id: 'premium-display',
-    name: 'Elite Glass Display Unit',
-    price: 85000,
-    description: 'Exhibition-grade glass packaging system for high-value asset presentation.',
-    category: 'Premium Unit',
-    image: '/images/products/display/BocolKacaDisplay.png'
   }
 ];

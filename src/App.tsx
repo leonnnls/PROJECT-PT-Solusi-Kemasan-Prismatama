@@ -31,7 +31,7 @@ export default function App() {
   const [checkoutStep, setCheckoutStep] = useState<'info' | 'success'>('info');
   const [activeCategory, setActiveCategory] = useState('All');
 
-  const categories = ['All', '15ml Series', '30ml Series', 'Glass 30ml', 'Premium Unit'];
+  const categories = ['All', '15ml Series', '30ml Series', 'Glass 30ml'];
 
   const filteredProducts = activeCategory === 'All' 
     ? PRODUCTS 
