@@ -25,11 +25,19 @@ import { PRODUCTS } from './constants';
 import { Product, CartItem } from './types';
 
 export default function App() {
+  const [isLoading, setIsLoading] = useState(true);
   const [cart, setCart] = useState<CartItem[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
   const [checkoutStep, setCheckoutStep] = useState<'info' | 'success'>('info');
   const [activeCategory, setActiveCategory] = useState('All');
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
 
   const categories = ['All', '15ml Series', '30ml Series', 'Glass 30ml'];
 
@@ -75,6 +83,51 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-neutral-background text-text-primary selection:bg-accent selection:text-white overflow-x-hidden">
+      <AnimatePresence mode="wait">
+        {isLoading && (
+          <motion.div
+            key="loader"
+            initial={{ opacity: 1 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="fixed inset-0 z-[1000] bg-white flex flex-col items-center justify-center"
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              className="relative"
+            >
+              <img 
+                src="/images/brand/logo.png" 
+                alt="Prismatama Logo" 
+                className="h-24 md:h-32 w-auto object-contain mb-12"
+              />
+              <div className="absolute -bottom-4 left-0 w-full h-[2px] bg-border overflow-hidden">
+                <motion.div 
+                  initial={{ x: '-100%' }}
+                  animate={{ x: '100%' }}
+                  transition={{ 
+                    repeat: Infinity, 
+                    duration: 1.5, 
+                    ease: "easeInOut" 
+                  }}
+                  className="w-full h-full bg-accent"
+                />
+              </div>
+            </motion.div>
+            <motion.span 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.5 }}
+              transition={{ delay: 0.5 }}
+              className="mt-8 text-[10px] font-black uppercase tracking-[0.5em] text-text-tertiary"
+            >
+              Initializing Systems
+            </motion.span>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* Navigation */}
       <header className="fixed top-0 w-full h-16 md:h-24 px-4 md:px-10 flex items-center justify-between border-b border-border bg-white/80 backdrop-blur-xl z-50">
         <div className="flex items-center gap-2">
