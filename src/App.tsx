@@ -122,7 +122,7 @@ export default function App() {
               transition={{ delay: 0.5 }}
               className="mt-8 text-[10px] font-black uppercase tracking-[0.5em] text-text-tertiary"
             >
-              Initializing Systems
+              Loading Page
             </motion.span>
           </motion.div>
         )}
